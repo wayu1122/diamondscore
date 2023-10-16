@@ -10,11 +10,11 @@
   @method('PUT')
 
   <div>
-    <strong>Name:</strong>
+    <strong>名前:</strong>
     <input type="text" name="name" value="{{$team->name}}" placeholder="Name">
   </div>
   <div>
-    <strong>City:</strong>
+    <strong>活動都市:</strong>
     <input type="text" name="city" value="{{$team->city}}" placeholder="city">
   </div>
   <div>

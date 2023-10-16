@@ -6,11 +6,11 @@
 </div>
 
 <div>
-  <strong>Name:</strong>
+  <strong>名前:</strong>
   {{$team->name}}
 </div>
 
 <div>
-  <strong>City:</strong>
+  <strong>活動都市:</strong>
   {{$team->city}}
 </div>
