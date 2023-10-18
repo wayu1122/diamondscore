@@ -40,6 +40,18 @@
          左打ち
      </div>
      <div>
+         <strong>Team:</strong>
+         <select name="team_id">
+         @foreach ($teams as $team)
+             @if ($team->id == $player->team_id)
+                 <option value="{{ $team->id }}" selected>{{ $team->name }}</option>
+             @else
+                 <option value="{{ $team->id }}">{{ $team->name }}</option>
+             @endif
+         @endforeach
+         </select>
+     </div>
+     <div>
          <strong>メールアドレス:</strong>
          <input type="text" name="mailaddress"  value="{{ $player->mailaddress }}">
      </div>

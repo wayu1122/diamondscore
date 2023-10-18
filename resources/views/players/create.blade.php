@@ -39,6 +39,14 @@
          <input type="radio" name="is_lefty" value=1>
      </div>
      <div>
+         <strong>所属チーム:</strong>
+         <select name="team_id">
+         @foreach ($teams as $team)
+         <option value="{{ $team->id }}">{{ $team->name }}</option>
+         @endforeach
+         </select>
+     </div>
+     <div>
          <strong>メールアドレス:</strong>
          <input type="text" name="mailaddress" placeholder="Mailaddress">
      </div>
@@ -47,7 +55,7 @@
          <input type="text" name="password" placeholder="Password">
      </div>
      <div>
-         <button type="submit">Submit</button>
+         <button type="submit">作成する</button>
      </div>
  
  </form>

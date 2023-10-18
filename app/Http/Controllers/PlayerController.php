@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Player;
+use App\Models\Team;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -16,6 +17,7 @@ class PlayerController extends Controller
     public function index()
     {
         $players = Player::all();
+
         return view('players.index', compact('players'));
     }
 
@@ -26,7 +28,9 @@ class PlayerController extends Controller
      */
     public function create()
     {
-        return view('players.create');
+        $teams = Team::all();
+
+        return view('players.create', compact('teams'));
     }
 
     /**
@@ -46,6 +50,7 @@ class PlayerController extends Controller
         $player->is_lefty = $request->input('is_lefty');
         $player->mailaddress = $request->input('mailaddress');
         $player->password = $request->input('password');
+        $player->team_id = $request->input('team_id');
         $player->save();
 
         return to_route('players.index');
@@ -71,7 +76,9 @@ class PlayerController extends Controller
      */
     public function edit(Player $player)
     {
-        return view('players.edit', compact('player'));
+        $teams = team::all();
+
+        return view('players.edit', compact('player', 'teams'));
     }
 
     /**
@@ -91,6 +98,7 @@ class PlayerController extends Controller
         $player->is_lefty = $request->input('is_lefty');
         $player->mailaddress = $request->input('mailaddress');
         $player->password = $request->input('password');
+        $player->team_id = $request->input('team_id');
         $player->update();
 
         return to_route('players.index');

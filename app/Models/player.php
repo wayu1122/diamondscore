@@ -9,14 +9,9 @@ class player extends Model
 {
     use HasFactory;
 
-    public function player()
-    {
-        return $this->belongsTo('App\Models\player');
-    }
-
     public function team()
     {
-        return $this->belongsTo(Team::class);
+        return $this->belongsTo('App\Models\Team');
     }
 }
     

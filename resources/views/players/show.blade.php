@@ -42,7 +42,14 @@
         右打ち
      @endif 
  </div>
-
+ <div>
+     @if ($player->team)
+        <strong>所属チーム:</strong>
+        {{ $player->team->name }}
+     @else
+        <strong>所属チーム: なし</strong>
+     @endif
+ </div>
  <div>
      <strong>メールアドレス:</strong>
      {{$player->mailaddress}} 
