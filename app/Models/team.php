@@ -13,4 +13,15 @@ class team extends Model
     {
         return $this->hasMany('App\Models\Player');
     }
+
+    public function homeGames()
+    {
+        return $this->hasMany(Game::class, 'home_team_id');
+    }
+
+    public function awayGames()
+    {
+        return $this->hasMany(Game::class, 'away_team_id');
+    }
+
 }
