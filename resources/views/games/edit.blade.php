@@ -23,19 +23,19 @@
      </div>
      <div>
          <strong>自チーム:</strong>
-         <input type="text" name="home_team_id" value="{{ $game->home_team_id }}" >
+         <input type="text" name="bat_first_id" value="{{ $game->home_team_id }}" >
      </div>
      <div>
          <strong>自チーム合計得点:</strong>
-         <input type="number" name="home_team_score" value="{{ $game->home_team_score }}" >
+         <input type="number" name="bat_first_score" value="{{ $game->home_team_score }}" >
      </div>
      <div>
          <strong>相手チーム:</strong>
-         <input type="text" name="away_team_id" value="{{ $game->away_team_id }}" >
+         <input type="text" name="field_first_id" value="{{ $game->away_team_id }}" >
      </div>
      <div>
          <strong>相手チーム合計得点:</strong>
-         <input type="number" name="away_team_score" value="{{ $game->away_team_score }}" >
+         <input type="number" name="field_first_score" value="{{ $game->away_team_score }}" >
      </div>
      <div>
          <button type="submit">Submit</button>

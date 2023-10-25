@@ -22,20 +22,20 @@
 
  <div>
      <strong>自チーム:</strong>
-     {{$game->home_team_id}} 
+     {{$game->bat_first_id}} 
  </div>
 
  <div>
      <strong>自チーム合計得点:</strong>
-     {{$game->home_team_score}} 
+     {{$game->bat_first_score}} 
  </div>
 
  <div>
      <strong>相手チーム:</strong>
-     {{$game->away_team_id}} 
+     {{$game->field_first_id}} 
  </div>
 
  <div>
      <strong>相手チーム合計得点:</strong>
-     {{$game->home_team_score}} 
+     {{$game->field_first_score}} 
  </div>

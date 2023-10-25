@@ -42,10 +42,10 @@ class GameController extends Controller
         $game->game_datetime = $request->input('game_datetime');
         $game->location = $request->input('location');
         $game->game_number = $request->input('game_number');
-        $game->home_team_id = $request->input('home_team_id');
-        $game->home_team_score = $request->input('home_team_score');
-        $game->away_team_id = $request->input('away_team_id');
-        $game->away_team_score = $request->input('away_team_score');
+        $game->bat_first_id = $request->input('bat_first_id');
+        $game->bat_first_score = $request->input('bat_first_score');
+        $game->field_first_id = $request->input('field_first_id');
+        $game->field_first_score = $request->input('field_first_score');
         $game->save();
 
         return to_route('games.index');
@@ -85,10 +85,10 @@ class GameController extends Controller
         $game->game_datetime = $request->input('game_datetime');
         $game->location = $request->input('location');
         $game->game_number = $request->input('game_number');
-        $game->home_team_id = $request->input('home_team_id');
-        $game->home_team_score = $request->input('home_team_score');
-        $game->away_team_id = $request->input('away_team_id');
-        $game->away_team_score = $request->input('away_team_score');
+        $game->bat_first_id = $request->input('bat_first_id');
+        $game->bat_first_score = $request->input('bat_first_score');
+        $game->field_first_id = $request->input('field_first_id');
+        $game->field_first_score = $request->input('field_first_score');
         $game->update();
 
         return to_route('games.index');

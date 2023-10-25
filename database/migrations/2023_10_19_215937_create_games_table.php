@@ -18,10 +18,10 @@ return new class extends Migration
             $table->dateTime('game_datetime');
             $table->string('location');
             $table->string('game_number');
-            $table->unsignedBigInteger('home_team_id');
-            $table->unsignedBigInteger('home_team_score')->nullable()->default(0);
-            $table->unsignedBigInteger('away_team_id');
-            $table->unsignedBigInteger('away_team_score')->nullable()->default(0);
+            $table->unsignedBigInteger('bat_first_id');
+            $table->unsignedBigInteger('bat_first_score')->nullable()->default(0);
+            $table->unsignedBigInteger('field_first_id');
+            $table->unsignedBigInteger('field_first_score')->nullable()->default(0);
             $table->timestamps();
         });
     }

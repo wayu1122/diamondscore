@@ -16,10 +16,10 @@
          <td>{{ $game->game_datetime }}</td>
          <td>{{ $game->location }}</td>
          <td>{{ $game->game_number }}</td>
-         <td>{{ $game->home_team_id }}</td>
-         <td>{{ $game->home_team_score }}</td>
-         <td>{{ $game->home_team_id }}</td>
-         <td>{{ $game->away_team_score }}</td>
+         <td>{{ $game->bat_first_id }}</td>
+         <td>{{ $game->bat_first_score }}</td>
+         <td>{{ $game->field_first_id }}</td>
+         <td>{{ $game->field_first_score }}</td>
          <td>
          <form action="{{ route('games.destroy',$game->id) }}" method="POST">
              <a href="{{ route('games.show',$game->id) }}">Show</a>

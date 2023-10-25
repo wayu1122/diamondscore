@@ -21,20 +21,20 @@
          <input type="number" name="game_number" placeholder="試合番号">
      </div>
      <div>
-       <strong for="home_team_id">自チーム:</strong>
-       <input name="home_team_id" required>
+       <strong for="bat_first_id">自チーム:</strong>
+       <input name="bat_first_id" required>
      </div>
      <div>
-        <strong for="home_team_score">自チーム合計得点:</strong>
+        <strong for="bat_first_score">自チーム合計得点:</strong>
         <input type="number" name="home_team_score" value="0" required>
      </div>
      <div>
-       <strong for="away_team_id">相手チーム:</strong>
-            <input name="away_team_id" required>
+       <strong for="field_first_id">相手チーム:</strong>
+            <input name="field_first_id" required>
      </div>
      <div>
-     <strong for="away_team_score">相手チーム合計得点:</strong>
-    <input type="number" name="away_team_score" value="0" required>
+     <strong for="field_first_score">相手チーム合計得点:</strong>
+    <input type="number" name="field_first_score" value="0" required>
      </div>
      <div>
          <button type="submit">Submit</button>
