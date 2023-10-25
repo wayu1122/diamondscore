@@ -11,7 +11,7 @@
  
      <div>
          <strong>試合日時:</strong>
-         <input type="datetime-local" name="game_datetime" value="{{ $game->game_datetime->format('Y-m-d\TH:i') }}" required>
+         <input type="datetime-local" name="game_datetime" value="{{ $game->game_datetime }}" required>
      </div>
      <div>
          <strong>試合場所:</strong>
@@ -27,15 +27,15 @@
      </div>
      <div>
          <strong>自チーム合計得点:</strong>
-         <input type="text" name="home_team_id_score" value="{{ $game->home_team_id_score }}" >
+         <input type="number" name="home_team_score" value="{{ $game->home_team_score }}" >
      </div>
      <div>
          <strong>相手チーム:</strong>
          <input type="text" name="away_team_id" value="{{ $game->away_team_id }}" >
      </div>
      <div>
-         <strong>自チーム合計得点:</strong>
-         <input type="text" name="away_team_id_score" value="{{ $game->away_team_id_score }}" >
+         <strong>相手チーム合計得点:</strong>
+         <input type="number" name="away_team_score" value="{{ $game->away_team_score }}" >
      </div>
      <div>
          <button type="submit">Submit</button>

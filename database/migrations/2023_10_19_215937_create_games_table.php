@@ -19,9 +19,9 @@ return new class extends Migration
             $table->string('location');
             $table->string('game_number');
             $table->unsignedBigInteger('home_team_id');
-            $table->unsignedBigInteger('home_team_score')->default(0);
+            $table->unsignedBigInteger('home_team_score')->nullable()->default(0);
             $table->unsignedBigInteger('away_team_id');
-            $table->unsignedBigInteger('away_team_score')->default(0);
+            $table->unsignedBigInteger('away_team_score')->nullable()->default(0);
             $table->timestamps();
         });
     }

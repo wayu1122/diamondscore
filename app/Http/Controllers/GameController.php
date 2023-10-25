@@ -86,9 +86,9 @@ class GameController extends Controller
         $game->location = $request->input('location');
         $game->game_number = $request->input('game_number');
         $game->home_team_id = $request->input('home_team_id');
-        $game->home_team_id_score = $request->input('home_team_id_score');
+        $game->home_team_score = $request->input('home_team_score');
         $game->away_team_id = $request->input('away_team_id');
-        $game->away_team_id_score = $request->input('away_team_id_score');
+        $game->away_team_score = $request->input('away_team_score');
         $game->update();
 
         return to_route('games.index');

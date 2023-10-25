@@ -27,7 +27,7 @@
 
  <div>
      <strong>自チーム合計得点:</strong>
-     {{$game->home_team_id_score}} 
+     {{$game->home_team_score}} 
  </div>
 
  <div>
@@ -37,5 +37,5 @@
 
  <div>
      <strong>相手チーム合計得点:</strong>
-     {{$game->home_team_id_score}} 
+     {{$game->home_team_score}} 
  </div>
