@@ -9,9 +9,9 @@ class game extends Model
 {
     use HasFactory;
 
-    public function inning()
+    public function innings()
     {
-        return $this->hasMany('App\Models\Inning');
+        return $this->hasMany(Inning::class);
     }
     
     public function homeTeam()

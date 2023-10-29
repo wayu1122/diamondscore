@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlayerController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\GameController;
-
+use App\Http\Controllers\IningController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +23,4 @@ Route::get('/', function () {
 Route::resource('players',PlayerController::class);
 Route::resource('teams',TeamController::class);
 Route::resource('games',GameController::Class);
+Route::resource('inings',IningController::Class);
