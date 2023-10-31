@@ -28,9 +28,7 @@ class PlayerController extends Controller
      */
     public function create()
     {
-        $teams = Team::all();
-
-        return view('players.create', compact('teams'));
+        return view('players.create');
     }
 
     /**

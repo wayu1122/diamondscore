@@ -11,15 +11,15 @@ class team extends Model
 
     public function players()
     {
-        return $this->hasMany('App\Models\Player');
+        return $this->hasMany(Player::class, 'team_id');
     }
 
-    public function homeGames()
+    public function batFirsts()
     {
         return $this->hasMany(Game::class, 'bat_first_id');
     }
 
-    public function awayGames()
+    public function fieldfirsts()
     {
         return $this->hasMany(Game::class, 'field_first_id');
     }

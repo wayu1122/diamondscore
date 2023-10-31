@@ -9,6 +9,7 @@
          <th>背番号</th>
          <th>投球スタイル</th>
          <th>バッターボックス</th>
+         <th>所属チーム</th>
      </tr>
      @foreach ($players as $player)
      <tr>
@@ -28,6 +29,7 @@
                 右打ち
              @endif 
          </td>
+         <td>{{ $player->team_id }}</td>
          <td>
              <a href="{{ route('players.show',$player->id) }}">Show</a>
              <a href="{{ route('players.edit',$player->id) }}">Edit</a>
