@@ -24,3 +24,7 @@ Route::resource('players',PlayerController::class);
 Route::resource('teams',TeamController::class);
 Route::resource('games',GameController::Class);
 Route::resource('inings',IningController::Class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
