@@ -13,5 +13,10 @@ class player extends Model
     {
         return $this->belongsTo(Team::class, 'team_id');
     }
+
+    public function base_runnings()
+    {
+        return $this->hasMany(base_running::class);
+    }
 }
     

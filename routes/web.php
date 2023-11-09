@@ -5,6 +5,7 @@ use App\Http\Controllers\PlayerController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\IningController;
+use App\Http\Controllers\base_runningController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +25,7 @@ Route::resource('players',PlayerController::class);
 Route::resource('teams',TeamController::class);
 Route::resource('games',GameController::Class);
 Route::resource('inings',IningController::Class);
+Route::resource('base_runnings',base_runningController::Class);
 
 Auth::routes();
 

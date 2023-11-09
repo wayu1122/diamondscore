@@ -29,11 +29,17 @@
                 右打ち
              @endif 
          </td>
-         <td>{{ $player->team_id }}</td>
+         <td>{{ $player->team->name }}</td>
          <td>
+         <form action="{{ route('players.destroy',$player->id) }}" method="POST">
              <a href="{{ route('players.show',$player->id) }}">Show</a>
              <a href="{{ route('players.edit',$player->id) }}">Edit</a>
+             @csrf
+             @method('DELETE')
+             <button type="submit">Delete</button>
+         </form>
          </td>
      </tr>
      @endforeach
  </table>
+ 

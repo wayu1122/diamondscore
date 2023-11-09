@@ -38,12 +38,12 @@
          左打ち
          <input type="radio" name="is_lefty" value=1>
      </div>
-     <div>
+     <div class="form-group">
          <strong>所属チーム:</strong>
-         <select name="team_id">
-         @foreach ($teams as $team)
-         <option value="{{ $team->id }}">{{ $team->name }}</option>
-         @endforeach
+         <select name="team_id" id="team_id" class="form-control">
+           @foreach ($teams as $team)
+               <option value="{{ $team->id }}">{{ $team->name }}</option>
+           @endforeach
          </select>
      </div>
      <div>
